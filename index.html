@@ -1,170 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>EMERGE – Tourist Safety</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(180deg, #0B1220, #111827);
-  color: white;
-}
-
-.container {
-  max-width: 420px;
-  margin: auto;
-  padding: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header h1 {
-  font-size: 26px;
-  margin: 0;
-}
-
-.header p {
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-.avatar {
-  width: 42px;
-  height: 42px;
-  background: #3b82f6;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
-.status {
-  background: #1f2937;
-  padding: 12px;
-  border-radius: 12px;
-  margin: 20px 0;
-  color: #22c55e;
-  text-align: center;
-}
-
-.card {
-  background: #1f2937;
-  border-radius: 16px;
-  padding: 25px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.card h2 {
-  margin: 10px 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-.feature {
-  background: #1f2937;
-  border-radius: 14px;
-  padding: 20px;
-  text-align: center;
-}
-
-.feature span {
-  font-size: 22px;
-}
-
-.feature p {
-  font-size: 13px;
-  opacity: 0.7;
-}
-
-.logout {
-  background: #3b82f6;
-  border-radius: 30px;
-  padding: 12px;
-  text-align: center;
-  margin: 30px 0 80px;
-}
-
-.sos {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: red;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 18px;
-}
-</style>
+  <title>EMERGE</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-<div class="container">
+  <div class="container">
+    <h1>EMERGE</h1>
+    <p>Smart Tourist Safety System</p>
 
-  <div class="header">
-    <div>
-      <h1>EMERGE</h1>
-      <p>Welcome, Tourist!</p>
-    </div>
-    <div class="avatar">T</div>
+    <button onclick="goLogin()">Login</button>
+    <button class="secondary" onclick="goRegister()">Register</button>
   </div>
 
-  <div class="status">
-    ● Status: Connected (GPS Active)
-  </div>
-
-  <div class="card">
-    <h2>🗺 Live Map View</h2>
-    <p>AI Predictive Risk Mapping: Active</p>
-  </div>
-
-  <div class="grid">
-    <div class="feature">
-      <span>🧠</span>
-      <h3>AI Safer Routes</h3>
-      <p>Risk-assessed paths</p>
-    </div>
-
-    <div class="feature">
-      <span>🔐</span>
-      <h3>Secure Digital ID</h3>
-      <p>Blockchain verified</p>
-    </div>
-
-    <div class="feature">
-      <span>📍</span>
-      <h3>Manage Zones</h3>
-      <p>Geo-fencing alerts</p>
-    </div>
-
-    <div class="feature">
-      <span>📢</span>
-      <h3>Incident Feed</h3>
-      <p>Automated reports</p>
-    </div>
-  </div>
-
-  <div class="logout">Logout</div>
-</div>
-
-<div class="sos">SOS</div>
-
+  <script src="app.js"></script>
 </body>
 </html>
